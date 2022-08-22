@@ -8,17 +8,23 @@ export default function TodoHandle() {
     const [loading, setLoading] = React.useState(false);
     const [Todolist, setTodolist] = React.useState([]);
     const [Error, setError] = React.useState(false);
+    const [totalItem, settotalItem] = React.useState(0);
+    const [Page, setPage] = React.useState(1);
 
     React.useEffect(() => {
         setLoading(true);
         fetchAndUpdateData();
-    }, []);
+    }, [Page]);
 
     const fetchAndUpdateData = () => {
         // https://fakestoreapi.com/products
         setLoading(true)
-        fetch("http://localhost:4000/Todos")
-            .then((res) => res.json())
+        fetch(`http://localhost:4000/Todos?_page=${Page}&_limit=5`)
+            .then((res) =>{
+              let total = res.headers.get("X-Total-Count");
+              settotalItem(+total);
+               return res.json()
+            })
             .then((res) => {
                 //  console.log(res);
                 setTodolist(res)
@@ -102,6 +108,11 @@ export default function TodoHandle() {
                                     <button onClick={() => handleDelete(todo.id)}>Delete</button>
                                 </div>
                             })}
+                            <div id="navi_Btns">
+                            <button onClick={()=>setPage(Page-1)} disabled={Page===1}>Prev</button>
+                            <span className="center">{Page}</span>
+                            <button onClick={()=>setPage(Page+1)} disabled={Page === Math.ceil(totalItem/5)}>Next</button>
+                            </div>
                         </div>)
             }
         </div>

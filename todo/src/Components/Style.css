@@ -15,6 +15,16 @@
     border: 2px solid brown;       
     margin: 5px 20px;
 }
+#navi_Btns button{
+    padding: 3px 30px;
+    border: 1px solid brown;
+    border-radius: 7px;
+    margin:0px 12px;
+}
+#navi_Btns{
+    gap: 50px;
+
+}
 button{
     cursor: pointer;
 }
