@@ -19,7 +19,8 @@ export default function TodoHandle() {
     const fetchAndUpdateData = () => {
         // https://fakestoreapi.com/products
         setLoading(true)
-        fetch(`http://localhost:4000/Todos?_page=${Page}&_limit=5`)
+        // fetch(`http://localhost:4000/Todos?_page=${Page}&_limit=5`)
+        fetch(`https://my-databases-json.herokuapp.com/todos?_page=${Page}&_limit=5`)
             .then((res) =>{
               let total = res.headers.get("X-Total-Count");
               settotalItem(+total);
@@ -36,7 +37,8 @@ export default function TodoHandle() {
     }
 
     const postData = (payload) => {
-        fetch("http://localhost:4000/Todos", {
+        // fetch("http://localhost:4000/Todos", {
+        fetch("https://my-databases-json.herokuapp.com/todos", {
             method: "POST",
             body: JSON.stringify(payload),
             headers: {
@@ -60,7 +62,8 @@ export default function TodoHandle() {
         selectedTodo[0].status = (!selectedTodo[0].status);
         let updated = selectedTodo[0];
         //  console.log(updated);
-        fetch(`http://localhost:4000/Todos/${id}`, {
+        // fetch(`http://localhost:4000/Todos/${id}`, {
+        fetch(`https://my-databases-json.herokuapp.com/todos/${id}`, {
             method: "PATCH",
             body: JSON.stringify(updated),
             headers: {
@@ -74,7 +77,8 @@ export default function TodoHandle() {
 
     const handleDelete = (id) => {
         // setLoading(true);
-        fetch(`http://localhost:4000/Todos/${id}`, {
+        // fetch(`http://localhost:4000/Todos/${id}`, {
+        fetch(`https://my-databases-json.herokuapp.com/todos/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
