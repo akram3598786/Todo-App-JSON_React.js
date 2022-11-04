@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Todo App
 
 During the learning of react and JSON server to perform all CRUD functionalities I built this web application built using React.js. In this application user can add, update and delete todo in list rendering from JSON server with pagination facility.
@@ -21,6 +17,10 @@ During the learning of react and JSON server to perform all CRUD functionalities
   <li>Netlify</li>
   
 </ul>
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
