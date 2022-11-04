@@ -2,6 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+## Built with
+
+<ul>
+  <li>React js</li>
+  <li>Redux</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>JSON Server</li>
+  <li>Local Storage</li>
+  <li>Google Auth</li>
+  <li>Heroku</li>
+  <li>Postman</li>
+  <li>Netlify</li>
+  
+</ul>
+
 ## Available Scripts
 
 In the project directory, you can run:
