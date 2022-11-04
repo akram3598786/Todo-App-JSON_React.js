@@ -8,13 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <ul>
   <li>React js</li>
-  <li>Redux</li>
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
   <li>JSON Server</li>
   <li>Local Storage</li>
-  <li>Google Auth</li>
   <li>Heroku</li>
   <li>Postman</li>
   <li>Netlify</li>
