@@ -18,6 +18,11 @@ During the learning of react and JSON server to perform all CRUD functionalities
   
 </ul>
 
+# User Interface
+
+![todohome](https://user-images.githubusercontent.com/57341544/200051576-2f61cce3-25a0-4a46-830e-4a00ec481e2a.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
