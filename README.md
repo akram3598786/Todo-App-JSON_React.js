@@ -1,3 +1,28 @@
+# Todo App
+
+During the learning of react and JSON server to perform all CRUD functionalities I built this web application using React.js. In this application user can add, update and delete todo in list rendering from JSON server with pagination facility.
+
+
+## Built with
+
+<ul>
+  <li>React js</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>JSON Server</li>
+  <li>Local Storage</li>
+  <li>Heroku</li>
+  <li>Postman</li>
+  <li>Netlify</li>
+  
+</ul>
+
+# User Interface
+
+![todohome](https://user-images.githubusercontent.com/57341544/200051576-2f61cce3-25a0-4a46-830e-4a00ec481e2a.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
